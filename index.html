@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="estilos.css">
 </head> 
 <body>
-    
+    <h1>Registro De estudiantes</h1>
+    <form name="frmControles" id="frmControles" method="get">
+        Nombre de docente: <input type="text" pattern="[a-zA-ZñÑ ]{3,60}" required size="25" placeholder="Nombre"><br><br>
+        Apellidos: <input type="text" pattern="[a-Za-ZñÑ]{3,60}" required size="20" placeholder="Apellidos"> <br><br>
+        Fecha Nacimiento: <input type="date" required><br><br>
+        tel:<input type="tel" required><br><br>
+        Email:<input type="email" pattern="[a-zA-ZnÑ]{3,60}" required size="20" placeholder="Email"> <br><br>
+        Status: 
+        <label for="soltero">soltero</label><input checked type="radio" name="cboStatus" id="soltero">
+        <label for="acompañado">acompañado</label><input type="radio" name="cboStatus" id="acompañado">
+        <label for="casado">casado</label><input type="radio" name="cboStatus" id="casado">
+        <label for="divorciado">divorciado</label><input type="radio" name="cboStatus" id="divorciado">
+        <label for="viudo">viudo</label><input type="radio" name="cboStatus" id="viudo"><br><br>
+        
+        DUI: <input type="text" placeholder="00000000-0" pattern="[0-9]{8}-[0-9]{1}" required>
+        <input type="submit" value="Guardar">
+   
+    </form>  
 </body>
 </html>
